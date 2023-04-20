@@ -60,9 +60,9 @@ stages:
         testRunTitle: 'Trivy - High and Critical Vulnerabilities'
       condition: 'always()'             
 
-    - task: Docker@2
-      inputs:
-        containerRegistry: 'Docker hub'
-        repository: '$(imageName)'
-        command: 'push'
-        tags: '$(tag)'
+#     - task: Docker@2
+#       inputs:
+#         containerRegistry: 'Docker hub'
+#         repository: '$(imageName)'
+#         command: 'push'
+#         tags: '$(tag)'
