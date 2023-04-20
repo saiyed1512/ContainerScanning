@@ -8,8 +8,8 @@ variables:
   #trivyVersion: 0.9.2
   trivyVersion: 0.40.0
   tag: 'azuredevops-$(Build.BuildNumber)'
-  imageName: 'liamgu/container-scanning-demo'
-
+  #imageName: 'liamgu/container-scanning-demo'
+  imageName: 'saiyed15121472/containerscanning'
 stages:
 - stage: Build
   displayName: Build, Scan and Push image
